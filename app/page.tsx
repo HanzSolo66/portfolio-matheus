@@ -19,6 +19,12 @@ const highlights = [
   "CI no GitHub Actions para validar cada Pull Request",
 ];
 
+const linkedinUrl =
+  "https://www.linkedin.com/in/matheus-batista-da-silva-4a8303170";
+
+const whatsappUrl =
+  "https://wa.me/5521992821779?text=Ol%C3%A1%2C%20Matheus!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade.";
+
 export default function Home() {
   return (
     <main>
@@ -231,11 +237,20 @@ export default function Home() {
         <div className="actions">
           <a
             className="primaryButton"
-            href="https://www.linkedin.com/"
+            href={linkedinUrl}
             target="_blank"
             rel="noreferrer"
           >
             LinkedIn
+          </a>
+
+          <a
+            className="secondaryButton"
+            href={whatsappUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
+            WhatsApp
           </a>
 
           <a
